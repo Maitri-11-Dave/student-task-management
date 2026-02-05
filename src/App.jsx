@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./App.css";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
-import { Dashboard } from "./pages/Dashboard";
 import AuthGuard from "./auth/AuthGuard";
 
 import {
@@ -10,6 +9,7 @@ import {
   Navigate,
   RouterProvider,
 } from "react-router-dom";
+import Dashboard from "./pages/Dashboard";
 
 const DefaultRoute = () => {
   const loginData = JSON.parse(localStorage.getItem('loginData'));
@@ -43,7 +43,7 @@ function App() {
       path:"/dashboard",
       element:(
 <AuthGuard required={true}>
-      <Dashboard/></AuthGuard>),
+      <Dashboard /></AuthGuard>),
     },
   ]);
   return <RouterProvider router={route} />;
