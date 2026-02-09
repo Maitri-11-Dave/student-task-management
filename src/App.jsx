@@ -3,13 +3,15 @@ import "./App.css";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import AuthGuard from "./auth/AuthGuard";
+import Dashboard from "./pages/Dashboard";
 
 import {
   createBrowserRouter,
   Navigate,
   RouterProvider,
 } from "react-router-dom";
-import Dashboard from "./pages/Dashboard";
+
+
 
 const DefaultRoute = () => {
   const loginData = JSON.parse(localStorage.getItem('loginData'));
@@ -47,6 +49,9 @@ function App() {
     },
   ]);
   return <RouterProvider router={route} />;
+    <MyProject />
+
 }
+
 
 export default App;

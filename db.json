@@ -10,6 +10,17 @@
     },
     {
       "id": "7931",
+      "completed": false,
+      "title": "New Task",
+      "description": "This is New Task",
+      "date": "2026-02-11",
+      "priority": "High"
+    },
+    {
+      "id": "7bfe",
+      "title": "Same Task",
+      "description": "This is same task",
+      "date": "2026-02-27",
       "completed": false
     }
   ]
